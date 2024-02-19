@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con Varias Secciones</title>
+  <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario con Varias Secciones</h1>
+
+    <!-- Sección 1: Datos Personales -->
+    <section class="section">
+      <h2>Datos Personales</h2>
+      <form action="/formulario" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br>
+      </form>
+    </section>
+
+    <!-- Sección 2: Información de Contacto -->
+    <section class="section">
+      <h2>Información de Contacto</h2>
+      <form action="/formulario" method="POST">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono"><br>
+      </form>
+    </section>
+
+    <!-- Sección 3: Dirección -->
+    <section class="section">
+      <h2>Dirección</h2>
+      <form action="/formulario" method="POST">
+        <label for="calle">Calle:</label><br>
+        <input type="text" id="calle" name="calle" required><br>
+        <label for="ciudad">Ciudad:</label><br>
+        <input type="text" id="ciudad" name="ciudad" required><br>
+        <label for="codigo_postal">Código Postal:</label><br>
+        <input type="text" id="codigo_postal" name="codigo_postal" required><br>
+      </form>
+    </section>
+
+    <!-- Botón de Enviar -->
+    <button type="submit" form="formulario" class="submit-button">Enviar</button>
+  </div>
+</body>
+</html>

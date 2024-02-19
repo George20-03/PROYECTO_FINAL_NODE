@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro - Dirección</title>
+  <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <div class="section-container">
+        <h2>Ingrese su Dirección</h2>
+        <form id="direccionForm" action="/formulario3" method="POST"> <!-- Corregido -->
+            <p>Por favor, complete los siguientes campos con su dirección postal.</p>
+            <label for="calle">Calle:</label><br>
+            <input type="text" id="calle" name="calle" required><br>
+            <label for="ciudad">Ciudad:</label><br>
+            <input type="text" id="ciudad" name="ciudad" required><br>
+            <label for="codigo_postal">Código Postal:</label><br>
+            <input type="text" id="codigo_postal" name="codigo_postal" required><br>
+            <div class="button-container">
+                <a href="FORMULARIO_INFORMACION_CONTACTO" class="back-button">Anterior</a> <!-- Botón de retroceso -->
+                <button type="submit" class="submit-button">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
